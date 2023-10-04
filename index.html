@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Ikromjon Akhmadjonov - Sezar Cipher</title>
+</head>
+<body>
+<div class="mainWrapper">
+    <div class="info">
+        Количество сдвигов: <strong><span id="shiftCount"></span></strong>
+    </div>
+    <div class="encrypt">
+        <textarea id="inputText" rows="4" cols="50" placeholder="Введите текст для шифрования"></textarea><br>
+        <!--<label for="shiftAmount">Сдвиг (целое число):</label>-->
+        <!--<input type="number" id="shiftAmount"><br>-->
+        <p class="text" id="encryptedText"></p>
+        <button onclick="encryptText()">Зашифровать</button>
+    </div>
+    <div class="decrypt">
+        <textarea id="inputTextDecrypt" rows="4" cols="50" placeholder="Введите текст для дешифрования"></textarea><br>
+        <!--<label for="shiftAmount">Сдвиг (целое число):</label>-->
+        <!--<input type="number" id="shiftAmount"><br>-->
+        <p class="text" id="decryptedText"></p>
+        <button onclick="decryptText()">Дешифровать</button>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
